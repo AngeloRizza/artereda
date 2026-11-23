@@ -7,6 +7,34 @@
 		<meta name="robots" content="noindex, nofollow" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			/* Immagine di sfondo a schermo intero */
+			#bg {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				background-image: url("images/bg.jpg");
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			/* Velatura scura per far risaltare logo bianco, testi e SVG */
+			#bg:after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: rgba(12, 14, 18, 0.58);
+				pointer-events: none;
+			}
+
+			#wrapper {
+				position: relative;
+				z-index: 2;
+			}
+
 			h1.brand-title {
 				display: inline-flex;
 				align-items: center;
