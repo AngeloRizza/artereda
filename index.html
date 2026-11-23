@@ -53,11 +53,39 @@
 				padding-bottom: 1rem;
 			}
 
+			/* Rimuove la linea inferiore e stringe quella superiore */
+			#header:after,
+			#header .content:after,
+			#header nav:after {
+				display: none !important;
+				content: none !important;
+			}
+
 			#header .content {
 				width: 100%;
 				max-width: 100%;
 				display: flex;
 				justify-content: center;
+				border-bottom: none !important;
+			}
+
+			#header .content:before {
+				max-width: 68% !important;
+				width: 68% !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			#header nav {
+				margin-top: 0.4rem;
+				border-bottom: none !important;
+			}
+
+			#header nav:before {
+				max-width: 68% !important;
+				width: 68% !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
 			}
 
 			#header .content .inner {
@@ -130,10 +158,6 @@
 				color: rgba(255, 255, 255, 0.84);
 				margin: 0;
 				line-height: 1.25;
-			}
-
-			#header nav {
-				margin-top: 0.4rem;
 			}
 
 			#footer {
