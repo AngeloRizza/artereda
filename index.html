@@ -8,30 +8,20 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			h1.brand-title {
-				font-size: 2.8rem;
-				font-weight: 300;
-				letter-spacing: 0.45rem;
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
 				margin-bottom: 0.8rem;
 				line-height: 1;
 			}
-			h1.brand-title svg.logo-a {
-				width: 34px !important;
-				height: 34px !important;
-				margin-right: 0.35rem;
-				flex-shrink: 0;
-				display: inline-block;
+			h1.brand-title svg.brand-wordmark {
+				height: 44px;
+				width: auto;
+				display: block;
 			}
 			@media screen and (max-width: 736px) {
-				h1.brand-title {
-					font-size: 2rem;
-					letter-spacing: 0.3rem;
-				}
-				h1.brand-title svg.logo-a {
-					width: 24px !important;
-					height: 24px !important;
+				h1.brand-title svg.brand-wordmark {
+					height: 32px;
 				}
 			}
 		</style>
@@ -42,15 +32,41 @@
         <div id="wrapper">
             <header id="header">
 				<!-- ///////// LOGO \\\\\\\\\\\\\ -->
-<div class="logo" style="display: flex; align-items: center; justify-content: center;">
-    <svg width="74" height="74" viewBox="0 0 100 100" fill="none" style="transform: translateY(-6px);">
-        <path d="M 5 92 L 50 4 L 95 92 L 22 92" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
-    </svg>
-</div>
+                <div class="logo" style="display: flex; align-items: center; justify-content: center;">
+                    <svg width="84" height="84" viewBox="0 0 100 100" fill="none" style="transform: translateY(-6px);">
+                        <path d="M 5 92 L 50 4 L 95 92 L 22 92" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                </div>
 
                 <div class="content">
                     <div class="inner">
-                        <h1 class="brand-title"><svg class="logo-a" width="34" height="34" viewBox="0 0 100 100" fill="none"><path d="M 14 88 L 50 12 L 86 88 L 28 88" stroke="#ffffff" stroke-width="4.5"/></svg>RTEREDA</h1>
+                        <h1 class="brand-title">
+                            <svg class="brand-wordmark" viewBox="0 0 640 100" fill="none" aria-label="ARTEREDA" role="img">
+                                <!-- A -->
+                                <path d="M 14 88 L 50 12 L 86 88 L 28 88" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- R -->
+                                <path d="M 122 88 L 122 14 L 154 14 C 168 14 176 22 176 34 C 176 46 168 54 154 54 L 122 54 M 148 54 L 178 88" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- T -->
+                                <path d="M 202 14 L 258 14 M 230 14 L 230 88" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- E -->
+                                <path d="M 326 14 L 284 14 L 284 88 L 326 88 M 284 51 L 318 51" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- R -->
+                                <path d="M 354 88 L 354 14 L 386 14 C 400 14 408 22 408 34 C 408 46 400 54 386 54 L 354 54 M 380 54 L 410 88" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- E -->
+                                <path d="M 478 14 L 436 14 L 436 88 L 478 88 M 436 51 L 470 51" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- D -->
+                                <path d="M 506 14 L 534 14 C 556 14 570 29 570 51 C 570 73 556 88 534 88 L 506 88 Z" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+                                <!-- A -->
+                                <path d="M 588 88 L 610 14 L 632 88 M 595 64 L 625 64" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+                            </svg>
+                        </h1>
                         <p>Italian Artisan Workshop, Fine Art &amp; Custom Sim-Hardware</p>
                     </div>
                 </div>
@@ -93,6 +109,3 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
-
-
-
