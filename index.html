@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
 			h1.brand-title {
-				font-size: 3.4rem;
+				font-size: 2.8rem;
 				font-weight: 300;
 				letter-spacing: 0.45rem;
 				display: inline-flex;
@@ -17,45 +17,71 @@
 				margin-bottom: 0.8rem;
 				line-height: 1;
 			}
-			h1.brand-title .logo-a {
-				width: 2.55rem;
-				height: 2.55rem;
+			h1.brand-title svg.logo-a {
+				width: 34px !important;
+				height: 34px !important;
 				margin-right: 0.35rem;
 				flex-shrink: 0;
+				display: inline-block;
 			}
 			@media screen and (max-width: 736px) {
 				h1.brand-title {
-					font-size: 2.2rem;
+					font-size: 2rem;
 					letter-spacing: 0.3rem;
 				}
-				h1.brand-title .logo-a {
-					width: 1.65rem;
-					height: 1.65rem;
+				h1.brand-title svg.logo-a {
+					width: 24px !important;
+					height: 24px !important;
 				}
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<!-- Wrapper containing header, main sections (SimWorks, Atelier & Lab, Chi Sono, Cabina di Regia) and footer -->
-		<div id="wrapper">
-			<header id="header">
-				<!-- Header containing SVG logo, ARTEREDA title, and navigation menu -->
-			</header>
-			<div id="main">
-				<article id="simworks">...</article>
-				<article id="atelier">...</article>
-				<article id="about">...</article>
-				<article id="regia">...</article>
-			</div>
-			<footer id="footer">...</footer>
-		</div>
-		<div id="bg"></div>
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+        <!-- Struttura principale del sito ArteReda SimWorks, Atelier e Cabina di Regia -->
+        <div id="wrapper">
+            <header id="header">
+                <div class="logo">
+                    <svg width="44" height="44" viewBox="0 0 100 100" fill="none"><path d="M 18 85 L 50 15 L 82 85 L 30 85" stroke="#ffffff" stroke-width="4"/></svg>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <h1 class="brand-title"><svg class="logo-a" width="34" height="34" viewBox="0 0 100 100" fill="none"><path d="M 14 88 L 50 12 L 86 88 L 28 88" stroke="#ffffff" stroke-width="4.5"/></svg>RTEREDA</h1>
+                        <p>Italian Artisan Workshop, Fine Art &amp; Custom Sim-Hardware</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#simworks">SimWorks</a></li>
+                        <li><a href="#atelier">Atelier &amp; Lab</a></li>
+                        <li><a href="#about">Chi Sono</a></li>
+                        <li><a href="#regia">Stato Lavori</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="main">
+                <article id="simworks">
+                    <h2 class="major">ArteReda SimWorks</h2>
+                    <p>Tactile Engineering for Land, Air &amp; Space Simulation: TR-23 Tactical Rocker, Simpit Vintage WW2 e moduli spaziali.</p>
+                </article>
+                <article id="atelier">
+                    <h2 class="major">Atelier &amp; Design Lab</h2>
+                    <p>Custom PC integrati, design 3D, ferro battuto e pittura a olio.</p>
+                </article>
+                <article id="about">
+                    <h2 class="major">L'Artigiano</h2>
+                    <p>Esperienza artigianale, tradizione di famiglia e passione per la simulazione e la tecnologia.</p>
+                </article>
+                <article id="regia">
+                    <h2 class="major">Cabina di Regia</h2>
+                    <p>Roadmap e avanzamento lavori dei progetti in corso.</p>
+                </article>
+            </div>
+            <footer id="footer">
+                <p class="copyright">&copy; ArteReda Workshop &amp; SimWorks — Design base: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </footer>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
 	</body>
 </html>
