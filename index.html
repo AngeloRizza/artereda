@@ -11,18 +11,36 @@
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
-				margin-bottom: 0.8rem;
+				margin-bottom: 0.7rem;
 				line-height: 1;
 			}
 			h1.brand-title svg.brand-wordmark {
-				height: 44px;
+				height: clamp(32px, 4.4vw, 44px);
 				width: auto;
 				display: block;
 			}
-			@media screen and (max-width: 736px) {
-				h1.brand-title svg.brand-wordmark {
-					height: 32px;
-				}
+			.subtitle-group {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.25rem;
+			}
+			h2.brand-subtitle-main {
+				font-size: clamp(0.95rem, 1.3vw, 1.25rem);
+				font-weight: 300;
+				letter-spacing: 0.16rem;
+				text-transform: uppercase;
+				color: #ffffff;
+				margin: 0;
+				line-height: 1.25;
+			}
+			h3.brand-subtitle-sub {
+				font-size: clamp(0.75rem, 0.95vw, 0.9rem);
+				font-weight: 300;
+				letter-spacing: 0.12rem;
+				color: rgba(255, 255, 255, 0.82);
+				margin: 0;
+				line-height: 1.35;
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -67,7 +85,10 @@
                                 <path d="M 588 88 L 610 14 L 632 88 M 595 64 L 625 64" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
                             </svg>
                         </h1>
-                        <p>Italian Artisan Workshop, Fine Art &amp; Custom Sim-Hardware</p>
+                        <div class="subtitle-group">
+                            <h2 class="brand-subtitle-main">Italian Artisan Workshop,</h2>
+                            <h3 class="brand-subtitle-sub">Fine Art &amp; Custom Sim-Hardware</h3>
+                        </div>
                     </div>
                 </div>
                 <nav>
